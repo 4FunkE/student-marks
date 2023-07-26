@@ -1,12 +1,13 @@
-
-  // Prevent ESLint from looking at parent directories
+{
   "root": true,
   "env": {
     "browser": true,
     "commonjs": true,
     "node": true,
-    // Add support for ES6 features
     "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": "latest"
   },
   "rules": {
     "no-duplicate-case": "error",
@@ -15,6 +16,7 @@
     "no-func-assign": "error",
     "no-irregular-whitespace": "error",
     "no-unreachable": "error",
+    "no-undef-init": "error",
     "curly": "error",
     "dot-notation": "error",
     "eqeqeq": "error",
@@ -32,6 +34,7 @@
     "quotes": ["error", "single"],
     "semi": ["error", "always"],
     "radix": "off"
-  }
+  },
+  "extends": ["prettier"]
 }
 
