@@ -8,15 +8,14 @@ CREATE TABLE teachers (
     first_name VARCHAR(50) NOT NULL,
     last_name VARCHAR(50) NOT NULL,
     emails VARCHAR(50) NOT NULL,
-    passwords VARCHAR(50) NOT NULL,
     course_id INT
 );
 
 CREATE TABLE courses (
-  id INT AUTO_INCREMENT,
+  id INT,
   course_title VARCHAR(30) NOT NULL,
   teachers_id INT,
-  student_id INT,
+  students_id INT,
   course_details TEXT,
   FOREIGN KEY (teachers_id)
   REFERENCES teachers(id)
@@ -25,9 +24,8 @@ CREATE TABLE courses (
 
 
 CREATE TABLE students (
-    id INT PRIMARY KEY AUTO_INCREMENT,
+    id INT PRIMARY KEY,
     first_name VARCHAR(50) NOT NULL,
     last_name VARCHAR(50) NOT NULL,
-    passwords VARCHAR(50) NOT NULL,
     course_id INT
 );
