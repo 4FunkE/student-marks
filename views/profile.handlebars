@@ -8,29 +8,41 @@
   <div class="col-md-6">
     <h3>Rate your teacher:</h3>
 
-    <form class="form new-project-form">
+    <form class="form new-rating-form">
       <div class="form-group">
-        <label for="project-name">Teacher:</label>
-        <select class="form-input" id="project-name" name="project-name">
-        <option value="option1">Andrew</option>
-        <option value="option2">Will</option>
-        <option value="option3">Viviana</option>
-        <option value="option4">Emilio</option>
+        <label for="teacher-name">Teacher:</label>
+        <select class="form-input" id="teacher-name" name="teacher-name">
+        <option value="Andrew">Andrew</option>
+        <option value="Will">Will</option>
+        <option value="Viviana">Viviana</option>
+        <option value="Emilio">Emilio</option>
     </select>
       </div>
       <div class="form-group">
       <h3>How many apples?</h3>
       <div class="rating">
-        <input type="radio" name="clr" style="--c: #ff0000" />
-        <input type="radio" name="clr" style="--c: #ff0000" />
-        <input type="radio" name="clr" style="--c: #ff0000" />
-        <input type="radio" name="clr" style="--c: #ff0000" />
-        <input type="radio" name="clr" style="--c: #ff0000" />
+        <input type="radio" name="clr" style="--c: #ff0000" value='5'/>
+        <input type="radio" name="clr" style="--c: #ff0000" value='4'/>
+        <input type="radio" name="clr" style="--c: #ff0000" value='3'/>
+        <input type="radio" name="clr" style="--c: #ff0000" value='2'/>
+        <input type="radio" name="clr" style="--c: #ff0000" value='1'/>
         </div>
     </div>
+    <script>
+      const radioButtons = document.querySelectorAll('input[name="clr"]');
+      radioButtons.forEach(function(radioButton) {
+    radioButton.addEventListener('change', function() {
+      if (this.checked) {
+        const selectedValue = this.value;
+        localStorage.setItem('selectedValue', selectedValue);
+        console.log("Selected value:", selectedValue);
+      }
+    });
+  });
+    </script>
       <div class="form-group">
-        <label for="project-desc">Comments:</label>
-        <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
+        <label for="rating-desc">Comments:</label>
+        <textarea class="form-input" id="rating-desc" name="rating-desc"></textarea>
       </div>
       <div class="form-group">
         <button type="submit" class="btn btn-primary">Post</button>
@@ -38,17 +50,17 @@
     </form>
   </div>
 
-  {{#if projects.length}}
-  <div class="col-md-6 project-list">
-    <h3>Current Projects:</h3>
+  {{#if ratings.length}}
+  <div class="col-md-6 rating-list">
+    <h3>Current Ratings:</h3>
 
-    {{#each projects as |project|}}
+    {{#each ratings as |rating|}}
     <div class="row mb-2">
       <div class="col-md-8">
-        <h4><a href="/project/{{project.id}}">{{project.name}}</a></h4>
+        <h4><a href="/rating/{{rating.id}}">{{rating.name}}</a></h4>
       </div>
       <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{project.id}}">DELETE</button>
+        <button class="btn btn-sm btn-danger" data-id="{{rating.id}}">DELETE</button>
       </div>
     </div>
     {{/each}}

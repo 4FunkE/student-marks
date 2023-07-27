@@ -1,7 +1,7 @@
-DROP DATABASE IF EXISTS school_db;
-CREATE DATABASE school_db;
+DROP DATABASE IF EXISTS studentmark_db;
+CREATE DATABASE studentmark_db;
 
-USE school_db;
+USE studentmark_db;
 
 CREATE TABLE teachers (
     id INT PRIMARY KEY AUTO_INCREMENT,
@@ -29,4 +29,3 @@ CREATE TABLE students (
     last_name VARCHAR(50) NOT NULL,
     course_id INT
 );
-
