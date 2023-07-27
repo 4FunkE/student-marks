@@ -26,6 +26,17 @@
    "email": "jamiranda@gmail.com",
    "password": "password",
    "role": "Teacher"
+  },
+  {"name": "Tyreal Worley",
+   "email": "tyreal.worley@example.com",
+   "password": "password",
+   "role": "Teacher",
+   "course_title": "Mathematics"
+  },
+  {"name": "Alice Johnson",
+   "email": "alice.johnson@example.com",
+   "password": "password",
+   "role": "Student"
   }
 ]
 

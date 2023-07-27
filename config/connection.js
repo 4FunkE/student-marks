@@ -3,7 +3,6 @@ const Sequelize = require('sequelize');
 // Loading environment variables from a .env file
 require('dotenv').config();
 
-// Create a connection object
 let sequelize;
 
 if (process.env.JAWSDB_URL) {

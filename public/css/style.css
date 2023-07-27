@@ -2,7 +2,7 @@
   color: #1b89bc;
 }
 
-header, .project:not(:last-child) {
+header, .rating:not(:last-child) {
   border-bottom: 1px solid #ccc;
 }
 
