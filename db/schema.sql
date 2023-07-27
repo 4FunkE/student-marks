@@ -12,7 +12,7 @@ CREATE TABLE teachers (
 );
 
 CREATE TABLE courses (
-  id INT,
+  id INT PRIMARY KEY AUTO_INCREMENT,
   course_title VARCHAR(30) NOT NULL,
   teachers_id INT,
   students_id INT,
