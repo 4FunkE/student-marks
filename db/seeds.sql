@@ -11,8 +11,8 @@ VALUES
 INSERT INTO courses (id, course_title, teachers_id, students_id, course_details)
 VALUES (1, 'Mathematics', 1, NULL, 'Introduction to Mathematics'),
        (2, 'Science', 2, NULL, 'Basic Science Concepts'),
-       (3, 'English' 3, NULL 'Intro to english'),
-       (4, 'history', 4, NULL, 'World history');
+       (3, 'English', 3, NULL, 'Intro to english'),
+       (4, 'History', 4, NULL, 'World history');
 
 INSERT INTO students (id, first_name, last_name, course_id)
 VALUES 
