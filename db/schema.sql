@@ -29,3 +29,4 @@ CREATE TABLE students (
     last_name VARCHAR(50) NOT NULL,
     course_id INT
 );
+
