@@ -38,12 +38,12 @@ User.init(
     role: {
       type: DataTypes.STRING,
       allowNull: false,
-      },
-      course_title: {
-        type: DataTypes.STRING,
-        allowNull: true,
-        },
     },
+    course_title: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+  },
   {
     hooks: {
       beforeCreate: async (newUserData) => {

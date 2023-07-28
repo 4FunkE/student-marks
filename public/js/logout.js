@@ -3,7 +3,7 @@ const FormData = require('form-data');
 
 // Function to handle user logout
 const logout = async () => {
-  // Create a new FormData object 
+  // Create a new FormData object
   const formData = new FormData();
 
   // Send a POST request to the API endpoint for user logout
