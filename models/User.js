@@ -39,10 +39,6 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false,
       },
-      course_title: {
-        type: DataTypes.STRING,
-        allowNull: true,
-        },
     },
   {
     hooks: {
