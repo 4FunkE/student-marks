@@ -38,6 +38,7 @@ User.init(
     role: {
       type: DataTypes.STRING,
       allowNull: false,
+      },
     },
     course_title: {
       type: DataTypes.STRING,

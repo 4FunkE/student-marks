@@ -11,6 +11,13 @@ CREATE TABLE teachers (
     course_id INT
 );
 
+CREATE TABLE students (
+    id INT PRIMARY KEY,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    course_id INT
+);
+
 CREATE TABLE courses (
   id INT PRIMARY KEY AUTO_INCREMENT,
   course_title VARCHAR(30) NOT NULL,
@@ -19,13 +26,8 @@ CREATE TABLE courses (
   course_details TEXT,
   FOREIGN KEY (teachers_id)
   REFERENCES teachers(id)
-  ON DELETE SET NULL
+  ON DELETE SET NULL,
+  FOREIGN KEY (students_id) REFERENCES students(id) ON DELETE SET NULL
 );
 
 
-CREATE TABLE students (
-    id INT PRIMARY KEY,
-    first_name VARCHAR(50) NOT NULL,
-    last_name VARCHAR(50) NOT NULL,
-    course_id INT
-);

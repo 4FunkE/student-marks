@@ -30,8 +30,7 @@
   {"name": "Tyreal Worley",
    "email": "tyreal.worley@example.com",
    "password": "password",
-   "role": "Teacher",
-   "course_title": "Mathematics"
+   "role": "Teacher"
   },
   {"name": "Alice Johnson",
    "email": "alice.johnson@example.com",

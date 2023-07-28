@@ -1,6 +1,3 @@
-// Import the FormData class from the 'form-data' package
-const FormData = require('form-data');
-
 //Function to handle login form submission
 const loginFormHandler = async (event) => {
   event.preventDefault();
