@@ -40,6 +40,11 @@ User.init(
       allowNull: false,
       },
     },
+    course_title: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+  },
   {
     hooks: {
       beforeCreate: async (newUserData) => {

@@ -1,4 +1,6 @@
+// Importing the Sequelize library
 const Sequelize = require('sequelize');
+// Loading environment variables from a .env file
 require('dotenv').config();
 
 let sequelize;
@@ -7,13 +9,14 @@ if (process.env.JAWSDB_URL) {
   sequelize = new Sequelize(process.env.JAWSDB_URL);
 } else {
   sequelize = new Sequelize(
-    process.env.DB_NAME,
-    process.env.DB_USER,
-    process.env.DB_PASSWORD,
+    process.env.DB_NAME, // Database name
+    process.env.DB_USER, // User
+    process.env.DB_PASSWORD, // Password
     {
-      host: '127.0.0.1',
+    // Database location
+      host: 'localhost',
       dialect: 'mysql',
-      port: 3306
+      port: 3306,
     }
   );
 }

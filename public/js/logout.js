@@ -1,7 +1,9 @@
 // Function to handle user logout
 const logout = async () => {
+  // Create a new FormData object
+  const formData = new FormData();
+  
   try {
-
   // Send a POST request to the API endpoint for user logout
   const response = await fetch('/api/users/logout', {
     method: 'POST',

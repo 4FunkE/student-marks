@@ -40,13 +40,13 @@ const signupFormHandler = async (event) => {
 
   // Check if name, email, and password are provided
   if (name && email && password) {
-   // Create a new FormData object
-   const formData = new FormData();
-   formData.append('name', name);
-   formData.append('email', email);
-   formData.append('password', password);
+    // Create a new FormData object
+    const formData = new FormData();
+    formData.append('name', name);
+    formData.append('email', email);
+    formData.append('password', password);
 
-    // Send a POST request to the API endpoint for signup 
+    // Send a POST request to the API endpoint for signup
     const response = await fetch('/api/users', {
       method: 'POST',
       body: formData,
