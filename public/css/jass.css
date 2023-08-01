@@ -1,55 +1,32 @@
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-/* Document
-   ========================================================================== */
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */
+/* create custom CSS variables (also called custom properties) and apply them to the root of the page, making them accessible to all other CSS...declare a variable with `--` syntax
+:root {
+    --light: #fff;
+    --navlink-color: #b9c6ae;
+  }*/
+  
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+  line-height: 1.15; /* Correct the line height in all browsers. */
+  -webkit-text-size-adjust: 100%; /* 2. Prevent adjustments of font size after orientation changes in iOS. */
 }
 
-/* Sections
-   ========================================================================== */
-/**
- * Remove the margin in all browsers.
- */
 body {
-  margin: 0;
+  margin: 0; /* no margins in all browsers */
 }
 
-/**
- * Render the `main` element consistently in IE.
- */
 main {
-  display: block;
+  display: block; /*Render the `main` element consistently in the browser for internet explorer.*/
 }
 
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
-/* Grouping content
-   ========================================================================== */
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
-hr {
-  box-sizing: content-box;
-  /* 1 */
+/* for the divider line */
+hr { 
+  box-sizing: content-box; /*Add the correct box sizing in Firefox.*/
   height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
+  overflow: visible; /*Show the overflow in Edge and IE.*/
 }
 
 /**
