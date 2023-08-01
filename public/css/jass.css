@@ -6,6 +6,7 @@
     --blue: #068DA9;
     --maroon: #7E1717;
     --bOrange: #E55807;
+    --standardBl: #1a1a1a;
     --openSans: 'Open Sans', sans-serif; 
     --bubblegumSans: 'Bubblegum Sans', cursive;
   }
@@ -100,7 +101,6 @@ select {
 /*ALL button style*/
 button,
 [type='button'],
-[type='reset'],
 [type='submit'] {
   background-color: #007bff;
   color: #fff;
@@ -112,7 +112,6 @@ button,
 /* no focus inner */
 button::-moz-focus-inner,
 [type='button']::-moz-focus-inner,
-[type='reset']::-moz-focus-inner,
 [type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
@@ -121,7 +120,6 @@ button::-moz-focus-inner,
 /*Restore focus styles for curser.*/
 button:-moz-focusring,
 [type='button']:-moz-focusring,
-[type='reset']:-moz-focusring,
 [type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
@@ -164,7 +162,7 @@ body {
   padding: 0;
   font-family: var(--openSans), "Roboto", "Noto Sans", Arial, Helvetica, sans-serif;
   font-size: 16px;
-  color: #1a1a1a;
+  color: var(--standardBl);
 }
 
 h1,
@@ -226,16 +224,16 @@ button {
 }
 
 a {
-  color: #1b89bc;
+  color: var(--blue);
   text-decoration: none;
 }
 
 a:hover {
-  color: #065b83;
+  color: var(--bOrange);
   text-decoration: underline;
 }
 
-/* HEIGHT / WIDTH UTILS */
+/* utility classes for managing heights and widths in a responsive web design */
 .w-100 {
   width: 100%;
 }
@@ -260,7 +258,7 @@ a:hover {
   min-width: 100vw;
 }
 
-/* MARGIN/PADDING UTILS */
+/* utility classes for managing margin and padding in a responsive web design */
 /* Margin - all sides */
 .m-0 {
   margin: 0;
