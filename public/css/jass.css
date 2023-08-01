@@ -1,8 +1,14 @@
-/* create custom CSS variables (also called custom properties) and apply them to the root of the page, making them accessible to all other CSS...declare a variable with `--` syntax
+/* create custom CSS variables */
+/* var(--bubblegumSans), "comic sans ms", "architects daughter", luckiest guy, bangers, fredoka one, permanent marker;*/
+/* var(--openSans), "Roboto", "Noto Sans", Arial, Helvetica, sans-serif; */
 :root {
-    --light: #fff;
-    --navlink-color: #b9c6ae;
-  }*/
+    --lightBlue: #ECF8F9;
+    --blue: #068DA9;
+    --maroon: #7E1717;
+    --bOrange: #E55807;
+    --openSans: 'Open Sans', sans-serif; 
+    --bubblegumSans: 'Bubblegum Sans', cursive;
+  }
   
 html {
   line-height: 1.15; /* Correct the line height in all browsers. */
@@ -29,11 +35,6 @@ hr {
   overflow: visible; /*Show the overflow in Edge and IE.*/
 }
 
-/* pre {
-  font-family: monospace, monospace;
-  font-size: 1em;
-} */
-
 /* target all anchor elements*/
 a {
   background-color: transparent;
@@ -51,18 +52,6 @@ b,
 strong {
   font-weight: bolder;
 }
-
-/* code,
-kbd,
-samp {
-  font-family: monospace, monospace;
-  font-size: 1em;
-} */
-
-
-/* small {
-  font-size: 80%;
-} */
 
 /*Prevent `sub` and `sup` elements from affecting the line height in all browsers.*/
 sub,
@@ -137,25 +126,6 @@ button:-moz-focusring,
   outline: 1px dotted ButtonText;
 }
 
-/* fieldset {
-  padding: 0.35em 0.75em 0.625em;
-} */
-
-
-/* legend {
-  box-sizing: border-box;
-  color: inherit;
-  display: table;
-  max-width: 100%;
-  padding: 0;
-  white-space: normal;
-} */
-
-/* 
-progress {
-  vertical-align: baseline;
-} */
-
 /*texttarea in profile.handlebar*/
 textarea {
   overflow: auto;
@@ -168,57 +138,7 @@ textarea {
   padding: 0;
 }
 
-/* [type='number']::-webkit-inner-spin-button,
-[type='number']::-webkit-outer-spin-button {
-  height: auto;
-} */
-
-/**
- * Remove the inner padding in Chrome and Safari on macOS.
- */
-[type='search']::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
-}
-
-/* Interactive
-   ========================================================================== */
-/*
- * Add the correct display in Edge, IE 10+, and Firefox.
- */
-details {
-  display: block;
-}
-
-/*
- * Add the correct display in all browsers.
- */
-summary {
-  display: list-item;
-}
-
-/* Misc
-   ========================================================================== */
-/**
- * Add the correct display in IE 10+.
- */
-template {
-  display: none;
-}
-
-/**
- * Add the correct display in IE 10.
- */
+/*catch the hidden attribute regardless of its value*/
 [hidden] {
   display: none;
 }
@@ -228,6 +148,7 @@ template {
 END NORMALIZE CSS
 =================
 */
+
 *,
 *::before,
 *::after {
