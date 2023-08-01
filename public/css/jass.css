@@ -1,6 +1,7 @@
 /* create custom CSS variables */
 /* var(--bubblegumSans), "comic sans ms", "architects daughter", luckiest guy, bangers, fredoka one, permanent marker;*/
 /* var(--openSans), "Roboto", "Noto Sans", Arial, Helvetica, sans-serif; */
+/* var(--) */
 :root {
     --lightBlue: #ECF8F9;
     --blue: #068DA9;

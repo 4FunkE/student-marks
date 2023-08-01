@@ -4,9 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>StudentMark 🍎</title>
+  <title>🍎 Student Mark</title>
   <link rel="stylesheet" href="/css/jass.css">
   <link rel="stylesheet" href="/css/style.css">
+  {{!-- apple icons --}}
   <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -20,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Bubblegum+Sans&display=swap" rel="stylesheet">
-
+  {{!-- background image --}}
     <style>
     body {
       background-image: url("https://img.freepik.com/free-photo/ready-back-school_1134-12.jpg?w=1060&t=st=1690844392~exp=1690844992~hmac=06b4e93ee1e40e154fc5a499466031cb960616f31496049687959a29bb825deb");
@@ -36,15 +37,15 @@
     <header class="display-flex justify-space-between align-center p-2">
       <h1 class="logo animate__animated animate__jackInTheBox">
         <span role="img" aria-label="apple" class="animate__animated animate__pulse animate__infinite" >🍎</span>
-        <a href="/">StudentMark</a>
+        <a href="/">Student Mark</a>
       </h1>
       <nav class="animate__animated animate__jackInTheBox" >
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-        <a href="/profile" class= "text-danger">profile</a> |
-        <button class="no-button" id="logout">logout</button>
+        <a href="/profile">Profile</a> |
+        <button class="no-button" id="logout">Logout</button>
         {{else}}
-        <a href="/login">login</a>
+        <a href="/login">Login</a>
         {{/if}}
       </nav>
     </header>

@@ -11,26 +11,28 @@
 }
 
 * {
-  color: #1b89bc;
+  color: var(--blue);
 }
 
-header, .rating:not(:last-child) {
-  border-bottom: 1px solid #ccc;
+header {
+  border-bottom: 1px solid var(--lightBlue);
+  background-color: rgba(236, 248, 249, 0.7);
 }
 
 .no-button {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  color: #1b89bc;
+  display: inline-block; /* or 'block' if you want it to take the full width */
+  padding: 10px 20px;
+  border: 1px solid #ccc;
   text-decoration: none;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  color: var(--lightBlue);
   font-size: 100%;
 }
 
 .no-button:hover {
-  color: #065b83;
-  text-decoration: underline;
+  background-color: var(--bOrange); /* background color on hover */
+  color: var(--lightBlue); /* text color on hover */
 }
 
 .rating {
@@ -38,8 +40,10 @@ header, .rating:not(:last-child) {
   display: flex;
   flex-direction: row-reverse;
   gap: 10px;
-  
+  border-bottom: 1px solid var(--lightBlue);
+  background-color: rgba(236, 248, 249, 0.7);
 }
+
 .rating input {
   position: relative;
   display: flex;
@@ -47,18 +51,20 @@ header, .rating:not(:last-child) {
   align-items: center;
   width: 100px;
   height: 100px;
-  cursor: pointer;
+  cursor: grab;
   appearance: none;
   -webkit-appearance: none;
 }
+/* apples without a hover look "rotten" */
 .rating input::before {
   content: '\f5d1';
   position: absolute;
   font-family: fontAwesome;
   font-size: 100px;
-  color: #111;
+  color: #964B00;
   transition: 0.5s;
 }
+/* apples with a hover look healthy */
 .rating input:hover ~ input::before,
 .rating input:hover::before,
 .rating input:checked ~ input::before,
@@ -66,99 +72,59 @@ header, .rating:not(:last-child) {
   color: var(--c);
 }
 
-.text-uppercase {
-  text-transform: uppercase !important;
-}
-
-.text-lowercase {
-  text-transform: lowercase !important;
-}
-
+/* text styling */
 .text-primary {
-  color: #2d3e50 !important;
+  color: var(--blue);
 }
-
 .text-info {
-  color: #1bbc9b !important;
+  color: var(--lightBlue);
 }
-
 .text-danger {
-  color: #e64c66 !important;
+  color: var(--maroon);
 }
-
-.text-default {
-  color: #aeaeae !important;
-}
-
-.text-light {
-  color: #d9e9e8 !important;
-}
-
-.text-dark {
-  color: #1a1a1a !important;
-}
-
 .text-white {
   color: #ffffff !important;
 }
-
 .text-black {
   color: #000000 !important;
 }
-
 .text-link {
-  color: #1b89bc !important;
+  color: var(--blue);
 }
 
+/* background styling */
+/* for light blue */
 .bg-primary {
-  background-color: #2d3e50 !important;
+  background-color: rgba(236, 248, 249, 0.7); 
 }
-
+/* for burnt orange */
 .bg-info {
-  background-color: #1bbc9b !important;
+  background-color: rgba(229, 88, 7, 0.5);;
 }
-
-.bg-danger {
-  background-color: #e64c66 !important;
-}
-
-.bg-light {
-  background-color: #d9e9e8 !important;
-}
-
-.bg-dark {
-  background-color: #1a1a1a !important;
-}
-
 .bg-white {
-  background-color: #ffffff !important;
+  background-color: #ffffff;
 }
-
 .bg-black {
-  background-color: #000000 !important;
+  background-color: #000000;
 }
-
+/* for blue */
 .bg-link {
-  background-color: #1b89bc !important;
+  background-color: rgba(6, 141, 169, 0.3);
 }
 
-/* DISPLAY */
+/* Display styling */
 .display-none {
-  display: none !important;
+  display: none;
 }
-
 .display-block {
-  display: block !important;
+  display: block;
 }
-
 .display-inline-block {
-  display: inline-block !important;
+  display: inline-block;
 }
-
 .display-inline {
-  display: inline !important;
+  display: inline;
 }
-
 .display-flex {
-  display: flex !important;
+  display: flex;
 }
