@@ -38,8 +38,8 @@ User.init(
     role: {
       type: DataTypes.STRING,
       allowNull: true,
-      },
     },
+  },
 
   {
     hooks: {
