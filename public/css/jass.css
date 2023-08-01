@@ -234,7 +234,7 @@ a:hover {
 }
 
 /* utility classes for managing heights and widths in a responsive web design */
-.w-100 {
+/* .w-100 {
   width: 100%;
 }
 
@@ -248,15 +248,15 @@ a:hover {
 
 .w-25 {
   width: 25%;
-}
+} */
 
-.min-100-vh {
+/* .min-100-vh {
   min-height: 100vh;
 }
 
 .min-100-vw {
   min-width: 100vw;
-}
+} */
 
 /* utility classes for managing margin and padding in a responsive web design */
 /* Margin - all sides */

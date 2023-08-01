@@ -1,8 +1,17 @@
 module.exports = {
+  format_date: (date) => {
+    // Format date as MM/DD/YYYY
+    return date.toLocaleDateString();
+  },
+  // we do not need format amount
+  format_amount: (amount) => {
+    // format large numbers with commas
+    return parseInt(amount).toLocaleString();
+  },
   get_emoji: () => {
     const randomNum = Math.random();
 
-    // Return a random emoji for each reload of page
+    // Return a random emoji for each page reload.
     if (randomNum > 0.7) {
       return '<span for="img" aria-label="book">📖</span>';
     } else if (randomNum > 0.4) {
