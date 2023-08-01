@@ -1,6 +1,3 @@
-// Import the FormData class from the 'form-data' package
-const FormData = require('form-data');
-
 //Function to handle login form submission
 const loginFormHandler = async (event) => {
   event.preventDefault();
@@ -11,16 +8,12 @@ const loginFormHandler = async (event) => {
 
   // Check if email and password are provided
   if (email && password) {
-    // Create a new FormData object
-    const formData = new FormData();
-    formData.append('email', email);
-    formData.append('password', password);
-
     // Send a POST request to the API endpoint for login
     const response = await fetch('/api/users/login', {
       method: 'POST',
-      body: FormData,
-    });
+      body: JSON.stringify({ email, password }),
+      headers: { 'Content-Type': 'application/json' },
+});
 
     //Check if the response is successful
     if (response.ok) {
@@ -40,19 +33,16 @@ const signupFormHandler = async (event) => {
   const name = document.querySelector('#name-signup').value.trim();
   const email = document.querySelector('#email-signup').value.trim();
   const password = document.querySelector('#password-signup').value.trim();
+  const role = document.querySelector('#role-signup').value.trim(); 
 
   // Check if name, email, and password are provided
-  if (name && email && password) {
-    // Create a new FormData object
-    const formData = new FormData();
-    formData.append('name', name);
-    formData.append('email', email);
-    formData.append('password', password);
-
+  if (name && email && password && role) {
+console.log(name + ' ' + email + ' ' + password);
     // Send a POST request to the API endpoint for signup
-    const response = await fetch('/api/users', {
+    const response = await fetch('/api/users/', {
       method: 'POST',
-      body: formData,
+      body: JSON.stringify({ name, email, password,role }),
+      headers: { 'Content-Type': 'application/json' },
     });
 
     if (response.ok) {
