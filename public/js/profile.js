@@ -2,7 +2,6 @@ const newFormHandler = async (event) => {
   event.preventDefault();
 
   const name = document.querySelector('#teacher-name').value.trim();
-  // const needed_funding = document.querySelector('#project-funding').value.trim();
   const description = document.querySelector('#rating-desc').value.trim();
   const selectedValue = localStorage.getItem('selectedValue');
   console.log("Retrieved value from localStorage:", selectedValue);
