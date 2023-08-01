@@ -3,6 +3,7 @@ module.exports = {
     // Format date as MM/DD/YYYY
     return date.toLocaleDateString();
   },
+  // we do not need format amount
   format_amount: (amount) => {
     // format large numbers with commas
     return parseInt(amount).toLocaleString();
@@ -10,7 +11,7 @@ module.exports = {
   get_emoji: () => {
     const randomNum = Math.random();
 
-    // Return a random emoji
+    // Return a random emoji CHANGE THE EMOJI!!!
     if (randomNum > 0.7) {
       return `<span for="img" aria-label="lightbulb">💡</span>`;
     } else if (randomNum > 0.4) {

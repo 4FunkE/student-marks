@@ -1,3 +1,15 @@
+/* var(--openSans), "Roboto", "Noto Sans", Arial, Helvetica, sans-serif; */
+/* var(--bubblegumSans), "comic sans ms", "architects daughter", luckiest guy, bangers, fredoka one, permanent marker;*/
+
+:root {
+  --lightBlue: #ECF8F9;
+  --blue: #068DA9;
+  --maroon: #7E1717;
+  --bOrange: #E55807;
+  --openSans: 'Open Sans', sans-serif; 
+  --bubblegumSans: 'Bubblegum Sans', cursive;
+}
+
 * {
   color: #1b89bc;
 }
@@ -19,12 +31,6 @@ header, .rating:not(:last-child) {
 .no-button:hover {
   color: #065b83;
   text-decoration: underline;
-}
-
-.dollar-amount {
-  color: #056605;
-  font-weight: bold;
-  margin-left: -5px;
 }
 
 .rating {

@@ -131,8 +131,7 @@ textarea {
   overflow: auto;
 }
 
-/* radio used in rating in progile handlebar*/
-[type='checkbox'],
+/* radio used in rating in profile handlebar for apples*/
 [type='radio'] {
   box-sizing: border-box;
   padding: 0;
@@ -163,7 +162,7 @@ body {
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-family: var(--openSans), "Roboto", "Noto Sans", Arial, Helvetica, sans-serif;
   font-size: 16px;
   color: #1a1a1a;
 }
