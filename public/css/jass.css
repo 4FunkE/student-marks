@@ -260,7 +260,7 @@ a:hover {
 
 /* utility classes for managing margin and padding in a responsive web design */
 /* Margin - all sides */
-.m-0 {
+/* .m-0 {
   margin: 0;
 }
 
@@ -286,7 +286,7 @@ a:hover {
 
 .m-auto {
   margin: auto;
-}
+} */
 
 /* Margin-bottom */
 .mb-0 {
