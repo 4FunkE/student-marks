@@ -1,13 +1,32 @@
-<div class="text-center">
-  <h2>{{name}}</h2>
-  <p>🍎</p>
-  <p>{{description}}</p>
-  <p>Course Title {{courseTitle}}</p>
-  <p>Created by {{user.name}} on {{format_date date_created}}</p>
-  <p>
-    <button
-      class="btn btn-primary"
-      onclick="window.location.href='/profile'"
-    >Back</button>
-  </p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css" integrity="sha512-qo+sT1Z/NWobWaKtwRo8vtyuS7uz9LEEA/Ng/zsiZL5xV3z0gZ1BsDOXODhkNrl7egZ4WeNqeyYtOTGkq75tA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Feducation&psig=AOvVaw1gDREf3F0A99qE66o-pCMt&ust=1690940341243000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCJD6reqpuoADFQAAAAAdAAAAABAd");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-color: #f2f2f2;
+    }
+  </style>
+  <title>Your Page Title</title>
+</head>
+<body>
+  <div class="container">
+    <div class="has-text-centered">
+      <h2 class="title is-3">{{name}}</h2>
+      <p>🍎</p>
+      <p>{{description}}</p>
+      <p>Course Title {{courseTitle}}</p>
+      <p>Created by {{user.name}} on {{format_date date_created}}</p>
+      <p>
+        <a class="button is-primary" href="/profile">Back</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
