@@ -41,7 +41,6 @@ header {
   flex-direction: row-reverse;
   gap: 10px;
   border-bottom: 1px solid var(--lightBlue);
-  background-color: rgba(236, 248, 249, 0.7);
 }
 
 .rating input {
@@ -75,6 +74,11 @@ header {
 /* text styling */
 .text-primary {
   color: var(--blue);
+  font-family: var(--bubblegumSans);
+  font-size: 300%;
+}
+.text-sec {
+  font-family: var(--openSans);
 }
 .text-info {
   color: var(--lightBlue);
