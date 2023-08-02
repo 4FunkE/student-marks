@@ -3,7 +3,7 @@
 
 :root {
   --lightBlue: #ECF8F9;
-  --blue: #068DA9;
+  --blue: #1033e2;
   --maroon: #7E1717;
   --bOrange: #E55807;
   --openSans: 'Open Sans', sans-serif; 
@@ -16,7 +16,8 @@
 
 header {
   border-bottom: 1px solid var(--lightBlue);
-  background-color: rgba(236, 248, 249, 0.7);
+  background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+
 }
 
 .no-button {
@@ -60,7 +61,7 @@ header {
   position: absolute;
   font-family: fontAwesome;
   font-size: 100px;
-  color: #964B00;
+  color: #76ed72;
   transition: 0.5s;
 }
 /* apples with a hover look healthy */
