@@ -1,38 +1,38 @@
 [
   {
-    "name": "Sal",
+    "name": "💀 Sal",
     "email": "sal@hotmail.com",
     "password": "password12345",
     "role": "Teacher"
   },
   {
-    "name": "Lernantino",
+    "name": "🔥 Lernantino",
     "email": "lernantino@gmail.com",
     "password": "password12345",
     "role": "Teacher"
   },
   {
-    "name": "Amiko",
+    "name": "🫶 Amiko",
     "email": "amiko2k20@aol.com",
     "password": "password12345",
     "role": "Teacher"
   },
-  {"name": "Daniel",
+  {"name": "🇲🇽 🇵🇷 Daniel",
     "email": "djamiranda@gmail.com",
     "password": "password",
     "role": "Student"
   },
-  {"name": "Jose",
+  {"name": "🇵🇷 Jose",
    "email": "jamiranda@gmail.com",
    "password": "password",
    "role": "Teacher"
   },
-  {"name": "Tyreal Worley",
+  {"name": "🎮 Tyreal Worley",
    "email": "tyreal.worley@example.com",
    "password": "password",
    "role": "Teacher"
   },
-  {"name": "Alice Johnson",
+  {"name": "🐰 Alice Johnson",
    "email": "alice.johnson@example.com",
    "password": "password",
    "role": "Student"

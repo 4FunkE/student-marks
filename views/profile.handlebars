@@ -12,20 +12,20 @@
       <div class="form-group">
         <label for="teacher-name">Teacher:</label>
         <select class="form-input" id="teacher-name" name="teacher-name">
-          <option value="Andrew">Andrew</option>
-          <option value="Will">Will</option>
-          <option value="Viviana">Viviana</option>
-          <option value="Emilio">Emilio</option>
+          <option value="🐯 Andrew">Andrew</option>
+          <option value="🥷 Will">Will</option>
+          <option value="🐻 Viviana">Viviana</option>
+          <option value="🦁 Emilio">Emilio</option>
         </select>
       </div>
 
       <div class="form-group">
         <label for="course-title">Course Title:</label>
         <select class="form-input" id="course-title" name="course-title">
-          <option value="Mathematics">Mathematics</option>
-          <option value="Science">Science</option>
-          <option value="English">English</option>
-          <option value="History">History</option>
+          <option value="🧮 Mathematics">Mathematics</option>
+          <option value="🧪 Science">Science</option>
+          <option value="📚 English">English</option>
+          <option value="📜 History">History</option>
         </select>
       </div>
 
@@ -67,7 +67,7 @@
       {{#each ratings as |rating|}}
         <div class="row mb-2">
           <div class="col-md-8">
-            <h4><a href="/rating/{{rating.id}}">{{rating.name}}</a></h4>
+            <h4><a href="/rating/{{rating.id}}">{{rating.name}} - {{courseTitle}} - {{selectedValue}} 🍎</a></h4>
           </div>
           <div class="col-md-4">
             <button
