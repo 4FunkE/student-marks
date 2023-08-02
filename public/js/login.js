@@ -13,7 +13,7 @@ const loginFormHandler = async (event) => {
       method: 'POST',
       body: JSON.stringify({ email, password }),
       headers: { 'Content-Type': 'application/json' },
-});
+    });
 
     //Check if the response is successful
     if (response.ok) {
@@ -33,11 +33,11 @@ const signupFormHandler = async (event) => {
   const name = document.querySelector('#name-signup').value.trim();
   const email = document.querySelector('#email-signup').value.trim();
   const password = document.querySelector('#password-signup').value.trim();
-  const role = document.querySelector('#role-signup').value.trim(); 
+  const role = document.querySelector('#role-signup').value.trim();
 
   // Check if name, email, and password are provided
   if (name && email && password && role) {
-console.log(name + ' ' + email + ' ' + password);
+    console.log(name + ' ' + email + ' ' + password);
     // Send a POST request to the API endpoint for signup
     const response = await fetch('/api/users/', {
       method: 'POST',

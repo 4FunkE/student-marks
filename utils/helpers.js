@@ -3,20 +3,18 @@ module.exports = {
     // Format date as MM/DD/YYYY
     return date.toLocaleDateString();
   },
-  format_amount: (amount) => {
-    // format large numbers with commas
-    return parseInt(amount).toLocaleString();
-  },
   get_emoji: () => {
     const randomNum = Math.random();
 
-    // Return a random emoji
+    // Return a random emoji for each page reload.
     if (randomNum > 0.7) {
-      return `<span for="img" aria-label="lightbulb">💡</span>`;
+      return '<span for="img" aria-label="book">📖</span>';
     } else if (randomNum > 0.4) {
-      return `<span for="img" aria-label="laptop">💻</span>`;
+      return '<span for="img" aria-label="pencil">✏️</span>';
+    } else if (randomNum > 0.1) {
+      return '<span for="img" aria-label="school">🏫</span>';
     } else {
-      return `<span for="img" aria-label="gear">⚙️</span>`;
+      return '<span for="img" aria-label="teacher">🤓</span>';
     }
   },
 };
