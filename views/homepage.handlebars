@@ -1,4 +1,4 @@
-<!-- Loop over each object in the projects array -->
+<!-- Loop over each object in the ratings array -->
 {{#each ratings as |rating| }}
 <div class="row mb-4 rating animated fadeIn text-sec bg-link">
   <div class="col-md-5">
@@ -9,7 +9,7 @@
     </h2>
     <p class="text-white">
       <span for="img" aria-label="apple">🍎</span>
-      <span class="teacher-rating">{{rating.teacher_rating}}</span>
+      <span class="teacher-rating">{{selectedValue}}</span>
       out of 5
     </p>
     <p class="text-white">Created by {{rating.user.name}} on {{format_date rating.date_created}}</p>
