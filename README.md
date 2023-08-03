@@ -26,16 +26,16 @@ Open the cloned (or downloaded) repository in any source code editor.
 2. Choose a teacher from the dropdown menu and rate them using the apple scale.
 3. Write a comment about the teacher's performance.
 4. Click the "Post" button to submit your comment and rating.
-5. To review your contributions, click on "Your Name." Don't forget to log out when you're done!
+5. To review your contributions, click on "Profile." Don't forget to log out when you're done!
 
 ## Deployed Application Link:
-[Deployed Application Link:]()
+[Deployed Application Link](https://shielded-everglades-30738-44134476de15.herokuapp.com/)
 
 ## GitHub Repository:
-[GitHub Repository:]()
+[GitHub Repository](https://github.com/4FunkE/student-marks)
 
 ## screenshots
-![image](https://github.com/4FunkE/student-marks/assets/129568159/57ddd46c-35bf-486d-9f1a-c0901efaf50d)
+![image](./public/image/Student-mark-image.png)
 
 ## Built With:
 - JSON:[ JSON](https://www.npmjs.com/package/json)
@@ -59,7 +59,7 @@ Collaborators:
 - Emily Rose Funk: https://github.com/4FunkE
 - Jaldhara Patel: https://github.com/jaldhara21
 - Tyreal Worley: https://github.com/KCGSWAGG
-- Starter code provided by [miniture-eureka](https://github.com/coding-boot-camp/miniature-eureka)
+- Starter code provided by 14-MVC 28-Stu-mini-project-bootcampLLC
 - Guidance from our instructor and TA
 
 ## License
