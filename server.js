@@ -16,7 +16,7 @@ require('dotenv').config();
 const hbs = exphbs.create({ helpers });
 
 const sess = {
-  secret: process.env.DB_SUPER,
+  secret: 'Super secret secret',
   cookie: {
     maxAge: 300000,
     httpOnly: true,
