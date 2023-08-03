@@ -26,10 +26,10 @@ Open the cloned (or downloaded) repository in any source code editor.
 2. Choose a teacher from the dropdown menu and rate them using the apple scale.
 3. Write a comment about the teacher's performance.
 4. Click the "Post" button to submit your comment and rating.
-5. To review your contributions, click on "Your Name." Don't forget to log out when you're done!
+5. To review your contributions, click on "Profile." Don't forget to log out when you're done!
 
 ## Deployed Application Link:
-[Deployed Application Link]()
+[Deployed Application Link](https://shielded-everglades-30738-44134476de15.herokuapp.com/)
 
 ## GitHub Repository:
 [GitHub Repository](https://github.com/4FunkE/student-marks)
