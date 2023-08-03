@@ -12,7 +12,7 @@ const logout = async () => {
     document.location.replace('/');
     console.log('logout done.');
   } else {
-    alert(response.statusText);
+    alert('🤖 Youre now signed out 🤖');
   }
 };
 // Add a click event listener to the logout button
