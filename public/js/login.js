@@ -20,7 +20,7 @@ const loginFormHandler = async (event) => {
       // If successful, redirect the browser to the profile page
       document.location.replace('/profile');
     } else {
-      alert(response.statusText);
+      alert('🤔 Incorrect email or password, please try again 🤔');
     }
   }
 };
@@ -51,7 +51,7 @@ const signupFormHandler = async (event) => {
       document.location.replace('/profile');
     } else {
       // If response is not successful, display the error message from the response
-      alert(response.statusText);
+      alert('🤖 Please complete all fields & try again 🤖');
     }
   }
 };
