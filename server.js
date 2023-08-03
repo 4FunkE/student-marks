@@ -11,11 +11,12 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+require('dotenv').config();
 // Set up Handlebars.js engine with custom helpers
 const hbs = exphbs.create({ helpers });
 
 const sess = {
-  secret: 'Super secret secret',
+  secret: process.env.DB_SUPER,
   cookie: {
     maxAge: 300000,
     httpOnly: true,
