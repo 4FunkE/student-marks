@@ -104,7 +104,7 @@ header {
 }
 /* for burnt orange */
 .bg-info {
-  background-color: rgba(229, 88, 7, 0.5);;
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%); ; 
 }
 .bg-white {
   background-color: #ffffff;
